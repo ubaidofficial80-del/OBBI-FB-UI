@@ -1,275 +1,1892 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My-Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css">
-</head>
-<body>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
     <div id="main-container">
-<header>
-    <nav>
-        <!-- fb logo search bar -->
-        <div id="nav-1">
-            <img src="logo.png" alt="" width="70px" height="70px">
+      <header>
+        <nav>
+          <!-- fb logo search bar -->
+          <div id="nav-1">
+            <a href="../index.html"
+              ><img src="logo.png" alt="" width="70px" height="70px"
+            /></a>
             <!-- icon -->
-             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 22px; fill:rgb(156, 156, 156); "  ><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"/></svg>
-            
-                <input class="fb-srch" type="text" placeholder="Search Facebook">
-           
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 640 640"
+              style="width: 22px; fill: rgb(156, 156, 156)"
+            >
+              <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+              <path
+                d="M480 272C480 317.9 465.1 360.3 440 394.7L566.6 521.4C579.1 533.9 579.1 554.2 566.6 566.7C554.1 579.2 533.8 579.2 521.3 566.7L394.7 440C360.3 465.1 317.9 480 272 480C157.1 480 64 386.9 64 272C64 157.1 157.1 64 272 64C386.9 64 480 157.1 480 272zM272 416C351.5 416 416 351.5 416 272C416 192.5 351.5 128 272 128C192.5 128 128 192.5 128 272C128 351.5 192.5 416 272 416z"
+              />
+            </svg>
+
+            <input class="fb-srch" type="text" placeholder="Search Facebook" />
+          </div>
+          <div id="b-icons">
+            <button style="border-bottom: 4px solid rgb(0, 102, 255)">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px; fill: rgb(0, 102, 255)"
+              >
+                <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM304 384L336 384C362.5 384 384 405.5 384 432L384 528L256 528L256 432C256 405.5 277.5 384 304 384z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px; fill: grey"
+              >
+                <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M96 160C96 124.7 124.7 96 160 96L480 96C515.3 96 544 124.7 544 160L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 160zM144 432L144 464C144 472.8 151.2 480 160 480L192 480C200.8 480 208 472.8 208 464L208 432C208 423.2 200.8 416 192 416L160 416C151.2 416 144 423.2 144 432zM448 416C439.2 416 432 423.2 432 432L432 464C432 472.8 439.2 480 448 480L480 480C488.8 480 496 472.8 496 464L496 432C496 423.2 488.8 416 480 416L448 416zM144 304L144 336C144 344.8 151.2 352 160 352L192 352C200.8 352 208 344.8 208 336L208 304C208 295.2 200.8 288 192 288L160 288C151.2 288 144 295.2 144 304zM448 288C439.2 288 432 295.2 432 304L432 336C432 344.8 439.2 352 448 352L480 352C488.8 352 496 344.8 496 336L496 304C496 295.2 488.8 288 480 288L448 288zM144 176L144 208C144 216.8 151.2 224 160 224L192 224C200.8 224 208 216.8 208 208L208 176C208 167.2 200.8 160 192 160L160 160C151.2 160 144 167.2 144 176zM448 160C439.2 160 432 167.2 432 176L432 208C432 216.8 439.2 224 448 224L480 224C488.8 224 496 216.8 496 208L496 176C496 167.2 488.8 160 480 160L448 160z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px; fill: grey"
+              >
+                <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M96 192C96 130.1 146.1 80 208 80C269.9 80 320 130.1 320 192C320 253.9 269.9 304 208 304C146.1 304 96 253.9 96 192zM32 528C32 430.8 110.8 352 208 352C305.2 352 384 430.8 384 528L384 534C384 557.2 365.2 576 342 576L74 576C50.8 576 32 557.2 32 534L32 528zM464 128C517 128 560 171 560 224C560 277 517 320 464 320C411 320 368 277 368 224C368 171 411 128 464 128zM464 368C543.5 368 608 432.5 608 512L608 534.4C608 557.4 589.4 576 566.4 576L421.6 576C428.2 563.5 432 549.2 432 534L432 528C432 476.5 414.6 429.1 385.5 391.3C408.1 376.6 435.1 368 464 368z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px; fill: grey"
+              >
+                <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M470.5 463.6C451.4 416.9 405.5 384 352 384L288 384C234.5 384 188.6 416.9 169.5 463.6C133.9 426.3 112 375.7 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320C528 375.7 506.1 426.2 470.5 463.6zM430.4 496.3C398.4 516.4 360.6 528 320 528C279.4 528 241.6 516.4 209.5 496.3C216.8 459.6 249.2 432 288 432L352 432C390.8 432 423.2 459.6 430.5 496.3zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM320 304C297.9 304 280 286.1 280 264C280 241.9 297.9 224 320 224C342.1 224 360 241.9 360 264C360 286.1 342.1 304 320 304zM232 264C232 312.6 271.4 352 320 352C368.6 352 408 312.6 408 264C408 215.4 368.6 176 320 176C271.4 176 232 215.4 232 264z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px; fill: grey"
+              >
+                <!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M448 128C554 128 640 214 640 320C640 426 554 512 448 512L192 512C86 512 0 426 0 320C0 214 86 128 192 128L448 128zM192 240C178.7 240 168 250.7 168 264L168 296L136 296C122.7 296 112 306.7 112 320C112 333.3 122.7 344 136 344L168 344L168 376C168 389.3 178.7 400 192 400C205.3 400 216 389.3 216 376L216 344L248 344C261.3 344 272 333.3 272 320C272 306.7 261.3 296 248 296L216 296L216 264C216 250.7 205.3 240 192 240zM432 336C414.3 336 400 350.3 400 368C400 385.7 414.3 400 432 400C449.7 400 464 385.7 464 368C464 350.3 449.7 336 432 336zM496 240C478.3 240 464 254.3 464 272C464 289.7 478.3 304 496 304C513.7 304 528 289.7 528 272C528 254.3 513.7 240 496 240z"
+                />
+              </svg>
+            </button>
+          </div>
+          <div id="r-icons">
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px"
+              >
+                <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M152 160C174.1 160 192 177.9 192 200L192 248C192 270.1 174.1 288 152 288L104 288C81.9 288 64 270.1 64 248L64 200C64 177.9 81.9 160 104 160L152 160zM344 288L296 288C273.9 288 256 270.1 256 248L256 200C256 177.9 273.9 160 296 160L344 160C366.1 160 384 177.9 384 200L384 248C384 270.1 366.1 288 344 288zM536 288L488 288C465.9 288 448 270.1 448 248L448 200C448 177.9 465.9 160 488 160L536 160C558.1 160 576 177.9 576 200L576 248C576 270.1 558.1 288 536 288zM536 480L488 480C465.9 480 448 462.1 448 440L448 392C448 369.9 465.9 352 488 352L536 352C558.1 352 576 369.9 576 392L576 440C576 462.1 558.1 480 536 480zM344 352C366.1 352 384 369.9 384 392L384 440C384 462.1 366.1 480 344 480L296 480C273.9 480 256 462.1 256 440L256 392C256 369.9 273.9 352 296 352L344 352zM152 480L104 480C81.9 480 64 462.1 64 440L64 392C64 369.9 81.9 352 104 352L152 352C174.1 352 192 369.9 192 392L192 440C192 462.1 174.1 480 152 480z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px"
+              >
+                <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M320.6 72C180.6 72 72 174.3 72 312.6C72 384.9 101.7 447.4 150.1 490.5C158.4 498 156.7 502.4 158.1 548.7C158.2 551.9 159.1 555.1 160.7 557.9C162.3 560.7 164.6 563.1 167.4 564.8C170.2 566.5 173.3 567.6 176.5 567.8C179.7 568 183 567.5 186 566.2C238.9 543 239.6 541.2 248.6 543.6C401.8 585.8 568 487.7 568 312.6C568 174.3 460.6 72 320.6 72zM469.8 257.1L396.8 372.7C394 377 390.4 380.8 386.2 383.7C382 386.6 377.1 388.5 372.1 389.5C367.1 390.5 361.8 390.3 356.8 389.1C351.8 387.9 347.1 385.7 343 382.7L284.9 339.2C282.3 337.3 279.1 336.2 275.9 336.2C272.7 336.2 269.5 337.3 266.9 339.2L188.5 398.6C178 406.5 164.3 394 171.4 382.9L244.4 267.3C247.2 263 250.8 259.2 255 256.3C259.2 253.4 264.1 251.5 269.1 250.5C274.1 249.5 279.4 249.7 284.4 250.9C289.4 252.1 294.1 254.3 298.3 257.3L356.4 300.8C359 302.7 362.2 303.8 365.4 303.8C368.6 303.8 371.8 302.7 374.4 300.8L452.8 241.4C463.2 233.4 476.9 245.9 469.9 257z"
+                />
+              </svg>
+            </button>
+            <button>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 640 640"
+                style="width: 28px"
+              >
+                <!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.-->
+                <path
+                  d="M320 64C302.3 64 288 78.3 288 96L288 99.2C215 114 160 178.6 160 256L160 277.7C160 325.8 143.6 372.5 113.6 410.1L103.8 422.3C98.7 428.6 96 436.4 96 444.5C96 464.1 111.9 480 131.5 480L508.4 480C528 480 543.9 464.1 543.9 444.5C543.9 436.4 541.2 428.6 536.1 422.3L526.3 410.1C496.4 372.5 480 325.8 480 277.7L480 256C480 178.6 425 114 352 99.2L352 96C352 78.3 337.7 64 320 64zM258 528C265.1 555.6 290.2 576 320 576C349.8 576 374.9 555.6 382 528L258 528z"
+                />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </header>
+      <div id="left-sidebar">
+        <button>
+          <img
+            src="profile-removebg-preview.png"
+            alt=""
+            style="width: 36px; height: 36px"
+          />Obaid Boss
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <g fill="#8B5CF6">
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(0 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(45 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(90 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(135 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(180 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(225 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(270 12 12)"
+              />
+              <ellipse
+                cx="12"
+                cy="3.5"
+                rx="2"
+                ry="3.5"
+                transform="rotate(315 12 12)"
+              />
+            </g>
+          </svg>
+          Meta AI
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <circle cx="9" cy="8" r="4" fill="#1D9BF0" />
+            <path
+              d="M3 19c0-3.1 2.7-5.5 6-5.5s6 2.4 6 5.5v1H3v-1z"
+              fill="#1D9BF0"
+            />
+            <circle cx="17" cy="9" r="2.8" fill="#6BD9A0" opacity="0.9" />
+            <path
+              d="M13.5 19v-1c0-1.6 1-3 2.5-3.8 1 .4 2.2 1 2.2 2.8v2h-4.7z"
+              fill="#6BD9A0"
+              opacity="0.9"
+            />
+          </svg>
+          Friends
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="9"
+              fill="none"
+              stroke="#1D9BF0"
+              stroke-width="2"
+            />
+            <path
+              d="M12 8v5l3 2"
+              stroke="#333"
+              stroke-width="1.8"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <path d="M7 4 L5 2 L4 5 L7 7 Z" fill="#1D9BF0" />
+          </svg>
+          Memories
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <defs>
+              <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#D946EF" />
+                <stop offset="100%" stop-color="#6366F1" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z"
+              fill="url(#g1)"
+            />
+          </svg>
+          Saved
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <circle cx="12" cy="12" r="10" fill="#1D9BF0" />
+            <circle cx="12" cy="8" r="2" fill="white" />
+            <circle cx="8" cy="10" r="1.8" fill="white" />
+            <circle cx="16" cy="10" r="1.8" fill="white" />
+            <path
+              d="M7 15.5c0-1.2 1.5-2.2 3-2.2s3 1 3 2.2M13 15.5c0-1.2 1.5-2.2 3-2.2 1.5 0 3 1 3 2.2v1.2H7v-1.2z"
+              fill="white"
+            />
+          </svg>
+          Groups
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <defs>
+              <linearGradient id="g2" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#FF6B6B" />
+                <stop offset="100%" stop-color="#FFB86C" />
+              </linearGradient>
+            </defs>
+            <rect x="3" y="3" width="18" height="18" rx="5" fill="url(#g2)" />
+            <path
+              d="M7 3h4v4H7zM13 3h4v4h-4zM7 9h4v4H7z"
+              fill="white"
+              opacity="0.9"
+            />
+            <path d="M10 12.5 L17 16 L10 19.5 Z" fill="white" />
+          </svg>
+          Reels
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <circle cx="8" cy="7" r="2.5" fill="#1D9BF0" />
+            <rect x="12" y="6" width="7" height="2" rx="1" fill="#1D9BF0" />
+            <path
+              d="M3 14c0-2 2-3.5 5-3.5s5 1.5 5 3.5v1H3v-1z"
+              fill="#1D9BF0"
+            />
+            <circle
+              cx="15"
+              cy="15"
+              r="4.5"
+              fill="white"
+              stroke="#1D9BF0"
+              stroke-width="1.5"
+            />
+            <path
+              d="M15 12.5v2.5l2 1.2"
+              stroke="#333"
+              stroke-width="1.3"
+              stroke-linecap="round"
+              fill="none"
+            />
+          </svg>
+          Feeds
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <rect
+              x="3"
+              y="4"
+              width="18"
+              height="16"
+              rx="3"
+              fill="white"
+              stroke="#E5E7EB"
+              stroke-width="1"
+            />
+            <path d="M3 4h18a3 3 0 0 1 3 3v3H3V4z" fill="#EF4444" />
+            <circle cx="6" cy="8.5" r="1" fill="white" />
+            <circle cx="18" cy="8.5" r="1" fill="white" />
+            <path
+              d="M12 11.5 L13.2 14.2 L16 14.2 L13.8 15.9 L14.6 18.6 L12 16.9 L9.4 18.6 L10.2 15.9 L8 14.2 L10.8 14.2 Z"
+              fill="#1F2937"
+            />
+          </svg>
+          Events
+        </button>
+        <button>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="32"
+            height="32"
+          >
+            <rect x="3" y="16" width="3" height="5" rx="1" fill="#3B82F6" />
+            <rect x="8" y="11" width="3" height="10" rx="1" fill="#3B82F6" />
+            <rect x="13" y="6" width="3" height="15" rx="1" fill="#3B82F6" />
+            <rect x="18" y="3" width="3" height="18" rx="1" fill="#3B82F6" />
+          </svg>
+          Ads Manager
+        </button>
+        <button>
+          <svg viewBox="0 0 36 36" width="36" height="36">
+            <rect width="36" height="36" rx="10" fill="#1B88FF" />
+            <path
+              d="M11 16.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm2 2.5h3m-1.5-1.5v3"
+              stroke="white"
+              stroke-width="1.6"
+              stroke-linecap="round"
+              fill="none"
+            />
+            <circle cx="24.5" cy="17" r="1.4" fill="#FFD500" />
+            <circle cx="27.5" cy="19" r="1.4" fill="#FFD500" />
+          </svg>
+          Play Games
+        </button>
+        <button>
+          <svg viewBox="0 0 36 36" width="36" height="36">
+            <rect x="7" y="12" width="22" height="16" rx="2" fill="#1B88FF" />
+            <rect x="7" y="12" width="22" height="5" fill="#0084FF" />
+            <path
+              d="M17 8c0-1.5 2.5-3 4-3 1.5 0 2 1 0.5 2.5 1.5-1 3 0 2 2-1 2-3 2-4.5 0.5"
+              fill="#FF2D55"
+              stroke="#FF2D55"
+              stroke-width="1"
+              stroke-linejoin="round"
+            />
+            <path d="M18 17 L18 28" stroke="#FF2D55" stroke-width="2.5" />
+          </svg>
+          Birthdays
+        </button>
+        <button>
+          <svg viewBox="0 0 36 36" width="36" height="36">
+            <rect width="36" height="36" rx="8" fill="none" />
+            <path
+              d="M8 7h20a3 3 0 0 1 3 3v16a3 3 0 0 1-3 3H11l-5 4V10a3 3 0 0 1 3-3z"
+              fill="#1B88FF"
+            />
+            <path d="M13 12h10v4h-6v10h-4v-10H13z" fill="white" opacity="0.9" />
+            <path d="M24 24h6v4h-6z" fill="#7ED6FF" />
+          </svg>
+          Gaming Video
+        </button>
+        <button>
+          <svg viewBox="0 0 36 36" width="36" height="36">
+            <path
+              d="M18 4C9.7 4 3 9.2 3 15.9c0 3.9 2.1 7.3 5.5 9.5l-0.9 3.8 4.5-2.5c1.5 0.4 3 0.7 4.9 0.7 8.3 0 15-5.2 15-11.9S26.3 4 18 4z"
+              fill="#0084FF"
+            />
+            <path d="M11 18l5-6 4 3 5-3-5 6-4-3-5 3z" fill="white" />
+          </svg>
+          Messenger
+        </button>
+        <button>
+          <svg viewBox="0 0 36 36" width="36" height="36">
+            <rect
+              x="6"
+              y="7"
+              width="22"
+              height="22"
+              rx="6"
+              transform="rotate(45 17 18)"
+              fill="#0A1E3C"
+            />
+            <rect
+              x="10"
+              y="10"
+              width="16"
+              height="16"
+              rx="3"
+              transform="rotate(45 17 18)"
+              fill="none"
+              stroke="#6DA5FF"
+              stroke-width="1.5"
+              opacity="0.6"
+            />
+          </svg>
+          Order and Payments
+        </button>
+        <button>
+          <svg viewBox="0 0 36 36" width="36" height="36">
+            <path
+              d="M10 5v26"
+              stroke="#1B88FF"
+              stroke-width="3"
+              stroke-linecap="round"
+            />
+            <path d="M13 7h14l-2 6 2 6H13z" fill="#FF7F1F" />
+          </svg>
+          Pages
+        </button>
+        <button>
+          <svg viewBox="0 0 36 36" width="36" height="36">
+            <rect
+              x="6"
+              y="6"
+              width="24"
+              height="24"
+              rx="6"
+              fill="#E0F0FF"
+              stroke="#1B88FF"
+              stroke-width="2"
+            />
+            <rect x="10" y="11" width="16" height="10" rx="2" fill="#1B88FF" />
+            <circle cx="14" cy="15" r="1.5" fill="white" />
+            <circle cx="19" cy="15" r="1" fill="white" />
+            <circle cx="22" cy="15" r="1" fill="white" />
+            <path d="M10 23h16v2H10z" fill="#7EB8FF" />
+          </svg>
+          Your Ad Activity
+        </button>
+      </div>
+      <div id="main-center-bar">
+        <div id="center-header">
+          <img src="profile-removebg-preview.png" alt="" />
+          <input type="text" placeholder="Whats on your mind Obaid ?" />
+          <div class="nav-svg">
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <path
+                fill="#F3425F"
+                d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"
+              />
+              <circle fill="white" cx="10" cy="12" r="2.5" />
+              <circle
+                fill="none"
+                stroke="white"
+                stroke-width="1.2"
+                cx="10"
+                cy="12"
+                r="4.2"
+                opacity="0.9"
+              />
+            </svg>
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <path
+                fill="#45BD62"
+                d="M4 4.5A2.5 2.5 0 0 1 6.5 2H18a2.5 2.5 0 0 1 2.5 2.5v12A2.5 2.5 0 0 1 18 19H6.5A2.5 2.5 0 0 1 4 16.5v-12zM6.5 4a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5H18a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H6.5z"
+              />
+              <path
+                fill="#45BD62"
+                d="M12.5 8.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM8 14l2.5-3.2 2.5 2.2L16 10l4 6H8z"
+              />
+              <path fill="#A8E6B0" d="M4 6.5l4-2v12l-4 2z" opacity="0.9" />
+            </svg>
+            <svg viewBox="0 0 24 24" width="28" height="28">
+              <circle
+                cx="12"
+                cy="12"
+                r="9.5"
+                fill="none"
+                stroke="#F7B928"
+                stroke-width="2"
+              />
+              <circle cx="9" cy="10" r="1.5" fill="#F7B928" />
+              <circle cx="15" cy="10" r="1.5" fill="#F7B928" />
+              <path
+                fill="#F7B928"
+                d="M8.5 15c.8 1.8 2.1 2.7 3.5 2.7S14.2 16.8 15 15c.3-.7-.1-1.2-1-1.2H9.5c-.9 0-1.3.5-1 1.2z"
+              />
+              <path
+                d="M12 7c-2.8 0-5.5 1.2-5.5 1.2s.8-1.5 2.5-2.2C10.5 5.3 12 5.2 12 5.2s1.5.1 3 1c1.7.7 2.5 2.2 2.5 2.2S14.8 7 12 7z"
+                fill="#F7B928"
+                opacity="0.6"
+              />
+            </svg>
+          </div>
         </div>
-        <div id="b-icons">
-            <button style="border-bottom: 4px solid rgb(0, 102, 255);"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px; fill:rgb(0, 102, 255)"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M341.8 72.6C329.5 61.2 310.5 61.2 298.3 72.6L74.3 280.6C64.7 289.6 61.5 303.5 66.3 315.7C71.1 327.9 82.8 336 96 336L112 336L112 512C112 547.3 140.7 576 176 576L464 576C499.3 576 528 547.3 528 512L528 336L544 336C557.2 336 569 327.9 573.8 315.7C578.6 303.5 575.4 289.5 565.8 280.6L341.8 72.6zM304 384L336 384C362.5 384 384 405.5 384 432L384 528L256 528L256 432C256 405.5 277.5 384 304 384z"/></svg></button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px; fill:grey"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M96 160C96 124.7 124.7 96 160 96L480 96C515.3 96 544 124.7 544 160L544 480C544 515.3 515.3 544 480 544L160 544C124.7 544 96 515.3 96 480L96 160zM144 432L144 464C144 472.8 151.2 480 160 480L192 480C200.8 480 208 472.8 208 464L208 432C208 423.2 200.8 416 192 416L160 416C151.2 416 144 423.2 144 432zM448 416C439.2 416 432 423.2 432 432L432 464C432 472.8 439.2 480 448 480L480 480C488.8 480 496 472.8 496 464L496 432C496 423.2 488.8 416 480 416L448 416zM144 304L144 336C144 344.8 151.2 352 160 352L192 352C200.8 352 208 344.8 208 336L208 304C208 295.2 200.8 288 192 288L160 288C151.2 288 144 295.2 144 304zM448 288C439.2 288 432 295.2 432 304L432 336C432 344.8 439.2 352 448 352L480 352C488.8 352 496 344.8 496 336L496 304C496 295.2 488.8 288 480 288L448 288zM144 176L144 208C144 216.8 151.2 224 160 224L192 224C200.8 224 208 216.8 208 208L208 176C208 167.2 200.8 160 192 160L160 160C151.2 160 144 167.2 144 176zM448 160C439.2 160 432 167.2 432 176L432 208C432 216.8 439.2 224 448 224L480 224C488.8 224 496 216.8 496 208L496 176C496 167.2 488.8 160 480 160L448 160z"/></svg></button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px; fill:grey"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M96 192C96 130.1 146.1 80 208 80C269.9 80 320 130.1 320 192C320 253.9 269.9 304 208 304C146.1 304 96 253.9 96 192zM32 528C32 430.8 110.8 352 208 352C305.2 352 384 430.8 384 528L384 534C384 557.2 365.2 576 342 576L74 576C50.8 576 32 557.2 32 534L32 528zM464 128C517 128 560 171 560 224C560 277 517 320 464 320C411 320 368 277 368 224C368 171 411 128 464 128zM464 368C543.5 368 608 432.5 608 512L608 534.4C608 557.4 589.4 576 566.4 576L421.6 576C428.2 563.5 432 549.2 432 534L432 528C432 476.5 414.6 429.1 385.5 391.3C408.1 376.6 435.1 368 464 368z"/></svg></button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px; fill:grey"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M470.5 463.6C451.4 416.9 405.5 384 352 384L288 384C234.5 384 188.6 416.9 169.5 463.6C133.9 426.3 112 375.7 112 320C112 205.1 205.1 112 320 112C434.9 112 528 205.1 528 320C528 375.7 506.1 426.2 470.5 463.6zM430.4 496.3C398.4 516.4 360.6 528 320 528C279.4 528 241.6 516.4 209.5 496.3C216.8 459.6 249.2 432 288 432L352 432C390.8 432 423.2 459.6 430.5 496.3zM320 576C461.4 576 576 461.4 576 320C576 178.6 461.4 64 320 64C178.6 64 64 178.6 64 320C64 461.4 178.6 576 320 576zM320 304C297.9 304 280 286.1 280 264C280 241.9 297.9 224 320 224C342.1 224 360 241.9 360 264C360 286.1 342.1 304 320 304zM232 264C232 312.6 271.4 352 320 352C368.6 352 408 312.6 408 264C408 215.4 368.6 176 320 176C271.4 176 232 215.4 232 264z"/></svg></button>
-            <button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px; fill:grey"><!--!Font Awesome Free v7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M448 128C554 128 640 214 640 320C640 426 554 512 448 512L192 512C86 512 0 426 0 320C0 214 86 128 192 128L448 128zM192 240C178.7 240 168 250.7 168 264L168 296L136 296C122.7 296 112 306.7 112 320C112 333.3 122.7 344 136 344L168 344L168 376C168 389.3 178.7 400 192 400C205.3 400 216 389.3 216 376L216 344L248 344C261.3 344 272 333.3 272 320C272 306.7 261.3 296 248 296L216 296L216 264C216 250.7 205.3 240 192 240zM432 336C414.3 336 400 350.3 400 368C400 385.7 414.3 400 432 400C449.7 400 464 385.7 464 368C464 350.3 449.7 336 432 336zM496 240C478.3 240 464 254.3 464 272C464 289.7 478.3 304 496 304C513.7 304 528 289.7 528 272C528 254.3 513.7 240 496 240z"/></svg></button>
+        <div id="main-story-box">
+          <div id="my-story">
+            <img src="3.jpg" alt="" />
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+              <circle cx="16" cy="16" r="16" fill="#0066ff" />
+              <path
+                d="M16 10V22M10 16H22"
+                stroke="white"
+                stroke-width="2.5"
+                stroke-linecap="round"
+              />
+            </svg>
+            <p>Create Story</p>
+          </div>
+          <div class="o-stories">
+            <img class="gym" src="9.png" alt="" />
+            <img class="fce" src="profile-removebg-preview.png" alt="" />
+            <span>Obbi King</span>
+          </div>
+          <div class="o-stories">
+            <img class="gym" src="9.png" alt="" />
+            <img class="fce" src="profile-removebg-preview.png" alt="" />
+            <span>Obbi King</span>
+          </div>
+          <div class="o-stories">
+            <img class="gym" src="9.png" alt="" />
+            <img class="fce" src="profile-removebg-preview.png" alt="" />
+            <span>Obbi King</span>
+          </div>
+          <div class="o-stories">
+            <img class="gym" src="9.png" alt="" />
+            <img class="fce" src="profile-removebg-preview.png" alt="" />
+            <span>Obbi King</span>
+          </div>
+          <div class="o-stories">
+            <img class="gym" src="9.png" alt="" />
+            <img class="fce" src="profile-removebg-preview.png" alt="" />
+            <span>Obbi King</span>
+          </div>
+          <div class="o-stories">
+            <img class="gym" src="9.png" alt="" />
+            <img class="fce" src="profile-removebg-preview.png" alt="" />
+            <span>Obbi King</span>
+          </div>
         </div>
-        <div id="r-icons">
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M152 160C174.1 160 192 177.9 192 200L192 248C192 270.1 174.1 288 152 288L104 288C81.9 288 64 270.1 64 248L64 200C64 177.9 81.9 160 104 160L152 160zM344 288L296 288C273.9 288 256 270.1 256 248L256 200C256 177.9 273.9 160 296 160L344 160C366.1 160 384 177.9 384 200L384 248C384 270.1 366.1 288 344 288zM536 288L488 288C465.9 288 448 270.1 448 248L448 200C448 177.9 465.9 160 488 160L536 160C558.1 160 576 177.9 576 200L576 248C576 270.1 558.1 288 536 288zM536 480L488 480C465.9 480 448 462.1 448 440L448 392C448 369.9 465.9 352 488 352L536 352C558.1 352 576 369.9 576 392L576 440C576 462.1 558.1 480 536 480zM344 352C366.1 352 384 369.9 384 392L384 440C384 462.1 366.1 480 344 480L296 480C273.9 480 256 462.1 256 440L256 392C256 369.9 273.9 352 296 352L344 352zM152 480L104 480C81.9 480 64 462.1 64 440L64 392C64 369.9 81.9 352 104 352L152 352C174.1 352 192 369.9 192 392L192 440C192 462.1 174.1 480 152 480z"/></svg></button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320.6 72C180.6 72 72 174.3 72 312.6C72 384.9 101.7 447.4 150.1 490.5C158.4 498 156.7 502.4 158.1 548.7C158.2 551.9 159.1 555.1 160.7 557.9C162.3 560.7 164.6 563.1 167.4 564.8C170.2 566.5 173.3 567.6 176.5 567.8C179.7 568 183 567.5 186 566.2C238.9 543 239.6 541.2 248.6 543.6C401.8 585.8 568 487.7 568 312.6C568 174.3 460.6 72 320.6 72zM469.8 257.1L396.8 372.7C394 377 390.4 380.8 386.2 383.7C382 386.6 377.1 388.5 372.1 389.5C367.1 390.5 361.8 390.3 356.8 389.1C351.8 387.9 347.1 385.7 343 382.7L284.9 339.2C282.3 337.3 279.1 336.2 275.9 336.2C272.7 336.2 269.5 337.3 266.9 339.2L188.5 398.6C178 406.5 164.3 394 171.4 382.9L244.4 267.3C247.2 263 250.8 259.2 255 256.3C259.2 253.4 264.1 251.5 269.1 250.5C274.1 249.5 279.4 249.7 284.4 250.9C289.4 252.1 294.1 254.3 298.3 257.3L356.4 300.8C359 302.7 362.2 303.8 365.4 303.8C368.6 303.8 371.8 302.7 374.4 300.8L452.8 241.4C463.2 233.4 476.9 245.9 469.9 257z"/></svg></button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" style="width: 28px"><!--!Font Awesome Free 7.3.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M320 64C302.3 64 288 78.3 288 96L288 99.2C215 114 160 178.6 160 256L160 277.7C160 325.8 143.6 372.5 113.6 410.1L103.8 422.3C98.7 428.6 96 436.4 96 444.5C96 464.1 111.9 480 131.5 480L508.4 480C528 480 543.9 464.1 543.9 444.5C543.9 436.4 541.2 428.6 536.1 422.3L526.3 410.1C496.4 372.5 480 325.8 480 277.7L480 256C480 178.6 425 114 352 99.2L352 96C352 78.3 337.7 64 320 64zM258 528C265.1 555.6 290.2 576 320 576C349.8 576 374.9 555.6 382 528L258 528z"/></svg></button>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
         </div>
-    </nav>
-</header>
-<div id="left-sidebar">
-<button><img src="profile-removebg-preview.png" alt="" style="width: 36px; height: 36px;">Obaid Boss </button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <g fill="#8B5CF6">
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(0 12 12)"/>
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(45 12 12)"/>
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(90 12 12)"/>
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(135 12 12)"/>
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(180 12 12)"/>
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(225 12 12)"/>
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(270 12 12)"/>
-    <ellipse cx="12" cy="3.5" rx="2" ry="3.5" transform="rotate(315 12 12)"/>
-  </g>
-</svg> Meta AI</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <circle cx="9" cy="8" r="4" fill="#1D9BF0"/>
-  <path d="M3 19c0-3.1 2.7-5.5 6-5.5s6 2.4 6 5.5v1H3v-1z" fill="#1D9BF0"/>
-  <circle cx="17" cy="9" r="2.8" fill="#6BD9A0" opacity="0.9"/>
-  <path d="M13.5 19v-1c0-1.6 1-3 2.5-3.8 1 .4 2.2 1 2.2 2.8v2h-4.7z" fill="#6BD9A0" opacity="0.9"/>
-</svg> Friends</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <circle cx="12" cy="12" r="9" fill="none" stroke="#1D9BF0" stroke-width="2"/>
-  <path d="M12 8v5l3 2" stroke="#333" stroke-width="1.8" stroke-linecap="round" fill="none"/>
-  <path d="M7 4 L5 2 L4 5 L7 7 Z" fill="#1D9BF0"/>
-</svg> Memories</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <defs><linearGradient id="g1" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D946EF"/><stop offset="100%" stop-color="#6366F1"/></linearGradient></defs>
-  <path d="M6 3h12a1 1 0 0 1 1 1v17l-7-4-7 4V4a1 1 0 0 1 1-1z" fill="url(#g1)"/>
-</svg> Saved</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <circle cx="12" cy="12" r="10" fill="#1D9BF0"/>
-  <circle cx="12" cy="8" r="2" fill="white"/>
-  <circle cx="8" cy="10" r="1.8" fill="white"/>
-  <circle cx="16" cy="10" r="1.8" fill="white"/>
-  <path d="M7 15.5c0-1.2 1.5-2.2 3-2.2s3 1 3 2.2M13 15.5c0-1.2 1.5-2.2 3-2.2 1.5 0 3 1 3 2.2v1.2H7v-1.2z" fill="white"/>
-</svg> Groups</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#FF6B6B"/><stop offset="100%" stop-color="#FFB86C"/></linearGradient></defs>
-  <rect x="3" y="3" width="18" height="18" rx="5" fill="url(#g2)"/>
-  <path d="M7 3h4v4H7zM13 3h4v4h-4zM7 9h4v4H7z" fill="white" opacity="0.9"/>
-  <path d="M10 12.5 L17 16 L10 19.5 Z" fill="white"/>
-</svg> Reels</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <circle cx="8" cy="7" r="2.5" fill="#1D9BF0"/>
-  <rect x="12" y="6" width="7" height="2" rx="1" fill="#1D9BF0"/>
-  <path d="M3 14c0-2 2-3.5 5-3.5s5 1.5 5 3.5v1H3v-1z" fill="#1D9BF0"/>
-  <circle cx="15" cy="15" r="4.5" fill="white" stroke="#1D9BF0" stroke-width="1.5"/>
-  <path d="M15 12.5v2.5l2 1.2" stroke="#333" stroke-width="1.3" stroke-linecap="round" fill="none"/>
-</svg> Feeds</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <rect x="3" y="4" width="18" height="16" rx="3" fill="white" stroke="#E5E7EB" stroke-width="1"/>
-  <path d="M3 4h18a3 3 0 0 1 3 3v3H3V4z" fill="#EF4444"/>
-  <circle cx="6" cy="8.5" r="1" fill="white"/><circle cx="18" cy="8.5" r="1" fill="white"/>
-  <path d="M12 11.5 L13.2 14.2 L16 14.2 L13.8 15.9 L14.6 18.6 L12 16.9 L9.4 18.6 L10.2 15.9 L8 14.2 L10.8 14.2 Z" fill="#1F2937"/>
-</svg> Events</button>
-<button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32">
-  <rect x="3" y="16" width="3" height="5" rx="1" fill="#3B82F6"/>
-  <rect x="8" y="11" width="3" height="10" rx="1" fill="#3B82F6"/>
-  <rect x="13" y="6" width="3" height="15" rx="1" fill="#3B82F6"/>
-  <rect x="18" y="3" width="3" height="18" rx="1" fill="#3B82F6"/>
-</svg> Ads Manager</button>
-<button><svg viewBox="0 0 36 36" width="36" height="36">
-  <rect width="36" height="36" rx="10" fill="#1B88FF"/>
-  <path d="M11 16.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zm2 2.5h3m-1.5-1.5v3" stroke="white" stroke-width="1.6" stroke-linecap="round" fill="none"/>
-  <circle cx="24.5" cy="17" r="1.4" fill="#FFD500"/><circle cx="27.5" cy="19" r="1.4" fill="#FFD500"/>
-</svg> Play Games</button>
-<button><svg viewBox="0 0 36 36" width="36" height="36">
-  <rect x="7" y="12" width="22" height="16" rx="2" fill="#1B88FF"/>
-  <rect x="7" y="12" width="22" height="5" fill="#0084FF"/>
-  <path d="M17 8c0-1.5 2.5-3 4-3 1.5 0 2 1 0.5 2.5 1.5-1 3 0 2 2-1 2-3 2-4.5 0.5" fill="#FF2D55" stroke="#FF2D55" stroke-width="1" stroke-linejoin="round"/>
-  <path d="M18 17 L18 28" stroke="#FF2D55" stroke-width="2.5"/>
-</svg> Birthdays</button>
-<button><svg viewBox="0 0 36 36" width="36" height="36">
-  <rect width="36" height="36" rx="8" fill="none"/>
-  <path d="M8 7h20a3 3 0 0 1 3 3v16a3 3 0 0 1-3 3H11l-5 4V10a3 3 0 0 1 3-3z" fill="#1B88FF"/>
-  <path d="M13 12h10v4h-6v10h-4v-10H13z" fill="white" opacity="0.9"/>
-  <path d="M24 24h6v4h-6z" fill="#7ED6FF"/>
-</svg> Gaming Video</button>
-<button><svg viewBox="0 0 36 36" width="36" height="36">
-  <path d="M18 4C9.7 4 3 9.2 3 15.9c0 3.9 2.1 7.3 5.5 9.5l-0.9 3.8 4.5-2.5c1.5 0.4 3 0.7 4.9 0.7 8.3 0 15-5.2 15-11.9S26.3 4 18 4z" fill="#0084FF"/>
-  <path d="M11 18l5-6 4 3 5-3-5 6-4-3-5 3z" fill="white"/>
-</svg> Messenger</button>
-<button><svg viewBox="0 0 36 36" width="36" height="36">
-  <rect x="6" y="7" width="22" height="22" rx="6" transform="rotate(45 17 18)" fill="#0A1E3C"/>
-  <rect x="10" y="10" width="16" height="16" rx="3" transform="rotate(45 17 18)" fill="none" stroke="#6DA5FF" stroke-width="1.5" opacity="0.6"/>
-</svg> Order and Payments</button>
-<button><svg viewBox="0 0 36 36" width="36" height="36">
-  <path d="M10 5v26" stroke="#1B88FF" stroke-width="3" stroke-linecap="round"/>
-  <path d="M13 7h14l-2 6 2 6H13z" fill="#FF7F1F"/>
-</svg> Pages</button>
-<button><svg viewBox="0 0 36 36" width="36" height="36">
-  <rect x="6" y="6" width="24" height="24" rx="6" fill="#E0F0FF" stroke="#1B88FF" stroke-width="2"/>
-  <rect x="10" y="11" width="16" height="10" rx="2" fill="#1B88FF"/>
-  <circle cx="14" cy="15" r="1.5" fill="white"/><circle cx="19" cy="15" r="1" fill="white"/><circle cx="22" cy="15" r="1" fill="white"/>
-  <path d="M10 23h16v2H10z" fill="#7EB8FF"/>
-</svg> Your Ad Activity</button>
-</div>
-<div id="main-center-bar">
-<div id="center-header">
-<img src="profile-removebg-preview.png" alt="" >
-<input type="text" placeholder="Whats on your mind Ubaid ?">
-<div class="nav-svg">
-  <svg viewBox="0 0 24 24" width="28" height="28">
-  <path fill="#F3425F" d="M17 10.5V7c0-.55-.45-1-1-1H4c-.55 0-1 .45-1 1v10c0 .55.45 1 1 1h12c.55 0 1-.45 1-1v-3.5l4 4v-11l-4 4z"/>
-  <circle fill="white" cx="10" cy="12" r="2.5" />
-  <circle fill="none" stroke="white" stroke-width="1.2" cx="10" cy="12" r="4.2" opacity="0.9"/>
-</svg>
-<svg viewBox="0 0 24 24" width="28" height="28">
-  <path fill="#45BD62" d="M4 4.5A2.5 2.5 0 0 1 6.5 2H18a2.5 2.5 0 0 1 2.5 2.5v12A2.5 2.5 0 0 1 18 19H6.5A2.5 2.5 0 0 1 4 16.5v-12zM6.5 4a.5.5 0 0 0-.5.5v12a.5.5 0 0 0 .5.5H18a.5.5 0 0 0 .5-.5v-12a.5.5 0 0 0-.5-.5H6.5z"/>
-  <path fill="#45BD62" d="M12.5 8.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM8 14l2.5-3.2 2.5 2.2L16 10l4 6H8z"/>
-  <path fill="#A8E6B0" d="M4 6.5l4-2v12l-4 2z" opacity="0.9"/>
-</svg>
-<svg viewBox="0 0 24 24" width="28" height="28">
-  <circle cx="12" cy="12" r="9.5" fill="none" stroke="#F7B928" stroke-width="2"/>
-  <circle cx="9" cy="10" r="1.5" fill="#F7B928"/>
-  <circle cx="15" cy="10" r="1.5" fill="#F7B928"/>
-  <path fill="#F7B928" d="M8.5 15c.8 1.8 2.1 2.7 3.5 2.7S14.2 16.8 15 15c.3-.7-.1-1.2-1-1.2H9.5c-.9 0-1.3.5-1 1.2z"/>
-  <path d="M12 7c-2.8 0-5.5 1.2-5.5 1.2s.8-1.5 2.5-2.2C10.5 5.3 12 5.2 12 5.2s1.5.1 3 1c1.7.7 2.5 2.2 2.5 2.2S14.8 7 12 7z" fill="#F7B928" opacity="0.6"/>
-</svg>
-</div>
-</div>
-<div id="main-story-box">
-    <div id="my-story">
-<img src="3.jpg" alt="">
-<svg width="32" height="32" viewBox="0 0 32 32" fill="none">
-  <circle cx="16" cy="16" r="16" fill="#0066ff"/>
-  <path d="M16 10V22M10 16H22" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-</svg>
-<p>Create Story</p>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div id="main-post-box">
+          <div class="top-h">
+            <img src="icc.jpg" alt="" />
+            <h4>
+              ICC - International Cricket Council
+              <span class="flo">.Follow</span>
+            </h4>
+          </div>
+          <div class="comnt">
+            <p>
+              West Indies deliver a clinical performance to level the T20I
+              series 2-2 against India and set up a decider in Bengaluru 👊<span
+                class="see"
+                >… See more</span
+              >
+            </p>
+          </div>
+          <img class="mn-img" src="west.jpg" alt="" />
+          <div class="btm-icon">
+            <div class="reacts">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 200 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M12.5 22.5V36.5C12.5 38 13.7 39.2 15.2 39.2H17.5L22.5 39.2C24.5 39.2 26.2 37.8 26.6 35.8L28.8 26.5C29.2 24.5 27.7 22.5 25.6 22.5H21.5V14.5C21.5 12.6 20 11 18 11C16.5 11 15.2 12.1 14.9 13.6L12.5 22.5Z"
+                  />
+                  <path
+                    d="M8.5 22.5H12.5V39.2H8.5C7.1 39.2 6 38.1 6 36.7V25C6 23.6 7.1 22.5 8.5 22.5Z"
+                  />
+                </g>
+                <text
+                  x="42"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  48.8K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 180 48"
+              >
+                <g
+                  fill="none"
+                  stroke="#65676B"
+                  stroke-width="2.2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M24 11C14.6 11 7 18 7 26.5C7 31 9.5 35 13.6 37.5L11.5 42L19.2 38.8C20.7 39.2 22.3 39.5 24 39.5C33.4 39.5 41 32.5 41 24C41 15.5 33.4 11 24 11Z"
+                  />
+                </g>
+                <text
+                  x="52"
+                  y="32"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  font-weight="600"
+                  fill="#65676B"
+                >
+                  1.1K
+                </text>
+              </svg>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="110"
+                height="30"
+                viewBox="0 0 160 48"
+              >
+                <g transform="translate(4,8)">
+                  <path
+                    d="M20 5 C20 5 8 14 8 20 C8 26 20 35 32 31 L26 26 C26 26 15 28 14 20 C15 12 26 9 26 9 L20 5 Z"
+                    fill="none"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M27 10 L33 6 L33 18 Z"
+                    fill="#65676B"
+                    stroke="#65676B"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <text
+                  x="54"
+                  y="31"
+                  font-family="Segoe UI, sans-serif"
+                  font-size="22"
+                  fill="#050505"
+                  opacity="0.7"
+                >
+                  490
+                </text>
+              </svg>
+            </div>
+            <div class="likes-thmb">
+              <svg
+                width="50"
+                height="32"
+                viewBox="0 0 80 32"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- Blue Like -->
+                <circle cx="16" cy="16" r="16" fill="#1877F2" />
+                <path
+                  d="M20.5 14.5c0-.8-.2-2.5 1-4 .5-.6 1.2-.8 1.8-.5.6.3.9 1 .9 1.8-.1 1.2-.5 2.5-.5 3.2H26c.8 0 1.5.7 1.5 1.5v.2c0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .5-.2.9-.5 1.2.3.2.5.6.5 1 0 .8-.7 1.5-1.5 1.5h-6.2c-1 0-2-.1-2.8-.5V14.5h1.5z M13 14.5h3v8h-3z"
+                  fill="white"
+                />
+                <!-- Red Heart -->
+                <circle cx="52" cy="16" r="16" fill="url(#g)" />
+                <path
+                  d="M52 24c-3-2.2-7-5-7-8 0-1.9 1.3-3.2 3-3.2 1 0 2 .5 2.7 1.3.7-.8 1.7-1.3 2.7-1.3 1.7 0 3 1.3 3 3.2 0 3-4 5.8-7 8z"
+                  fill="white"
+                />
+                <defs>
+                  <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+                    <stop stop-color="#FF6A6A" />
+                    <stop offset="1" stop-color="#E41E3F" />
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="right-bar"></div>
     </div>
-    <div class="o-stories">
-      <img class="gym" src="9.png" alt="">
-    <img class="fce" src="profile-removebg-preview.png" alt="">
-      <span>Obbi King</span>
-    </div>
-      <div class="o-stories">
-      <img class="gym" src="9.png" alt="">
-    <img class="fce" src="profile-removebg-preview.png" alt="">
-      <span>Obbi King</span>
-    </div>
-      <div class="o-stories">
-      <img class="gym" src="9.png" alt="">
-    <img class="fce" src="profile-removebg-preview.png" alt="">
-      <span>Obbi King</span>
-    </div>
-      <div class="o-stories">
-      <img class="gym" src="9.png" alt="">
-    <img class="fce" src="profile-removebg-preview.png" alt="">
-      <span>Obbi King</span>
-    </div>
-      <div class="o-stories">
-      <img class="gym" src="9.png" alt="">
-    <img class="fce" src="profile-removebg-preview.png" alt="">
-      <span>Obbi King</span>
-    </div>
-      <div class="o-stories">
-      <img class="gym" src="9.png" alt="">
-    <img class="fce" src="profile-removebg-preview.png" alt="">
-      <span>Obbi King</span>
-    </div>
-</div>
-<div id="main-post-box">
-
-</div>
-
-
-</div>
-<div id="right-bar">
-
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-    </div>
-</body>
+  </body>
 </html>
