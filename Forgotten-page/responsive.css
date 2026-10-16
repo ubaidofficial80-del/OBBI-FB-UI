@@ -1,0 +1,695 @@
+
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+
+    #main {
+        width: 100%;
+        height: auto;
+        min-height: 65vh;
+        padding: 35px 40px;
+        box-sizing: border-box;
+    }
+
+    #box-1 {
+        width: 100%;
+        max-width: 630px;
+        height: auto;
+    }
+
+    #input-email,
+    #continue {
+        width: 100%;
+    }
+
+    #input-email > input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    #con {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #box-2 {
+        margin-top: 0;
+        padding: 25px 5%;
+        box-sizing: border-box;
+    }
+
+    #oper-text {
+        margin-left: 0;
+        word-spacing: normal;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 24px;
+        line-height: 1.6;
+    }
+
+    #box-4,
+    #box-3 {
+        padding-left: 5%;
+        padding-right: 5%;
+        box-sizing: border-box;
+    }
+
+    #border {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #lower-text {
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 1.8;
+    }
+}
+
+
+/* ===================================== */
+/* Desktop: 1281–1440px                 */
+/* ===================================== */
+
+@media screen and (min-width: 1281px) and (max-width: 1440px) {
+
+    #main {
+        width: 100%;
+        min-height: 65vh;
+        height: auto;
+        padding: 40px 50px;
+        box-sizing: border-box;
+    }
+
+    #box-1 {
+        width: 100%;
+        max-width: 630px;
+        height: auto;
+    }
+
+    #heading {
+        font-size: 23px;
+    }
+
+    #input-email,
+    #continue {
+        width: 100%;
+    }
+
+    #input-email > input {
+        width: 100%;
+        height: 60px;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+
+    #con {
+        width: 100%;
+        height: 48px;
+        margin-left: 0;
+    }
+
+    #box-2 {
+        margin-top: 0;
+        padding: 25px 7%;
+        box-sizing: border-box;
+    }
+
+    #oper-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px 28px;
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 1.7;
+    }
+
+    #box-3,
+    #box-4 {
+        padding-left: 7%;
+        padding-right: 7%;
+        box-sizing: border-box;
+    }
+
+    #border {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #lower-text {
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 1.9;
+    }
+}
+
+
+/* ===================================== */
+/* Large Desktop: 1441–1920px           */
+/* ===================================== */
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+
+    #main {
+        width: 100%;
+        height: auto;
+        min-height: 65vh;
+        padding: 45px 60px;
+        box-sizing: border-box;
+    }
+
+    #box-1 {
+        width: 100%;
+        max-width: 630px;
+        height: auto;
+    }
+
+    #heading {
+        font-size: 24px;
+    }
+
+    #line {
+        font-size: 18px;
+    }
+
+    #input-email,
+    #continue {
+        width: 100%;
+    }
+
+    #input-email > input {
+        width: 100%;
+        height: 62px;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+
+    #con {
+        width: 100%;
+        height: 48px;
+        margin-left: 0;
+        font-size: 16px;
+    }
+
+    #box-2 {
+        margin-top: 0;
+        padding: 30px 8%;
+        box-sizing: border-box;
+    }
+
+    #oper-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 18px 30px;
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 1.8;
+        font-size: 15px;
+    }
+
+    #box-3,
+    #box-4 {
+        padding-left: 8%;
+        padding-right: 8%;
+        box-sizing: border-box;
+    }
+
+    #border {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #lower-text {
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 2;
+        font-size: 14px;
+    }
+}
+
+
+/* ===================================== */
+/* Extra Large Desktop: 1921–2560px     */
+/* ===================================== */
+
+@media screen and (min-width: 1921px) and (max-width: 2560px) {
+
+    #main {
+        width: 100%;
+        height: auto;
+        min-height: 65vh;
+        padding: 50px 80px;
+        box-sizing: border-box;
+    }
+
+    #box-1 {
+        width: 100%;
+        max-width: 630px;
+        height: auto;
+    }
+
+    #icon {
+        width: 36px;
+        height: 36px;
+    }
+
+    #heading {
+        font-size: 25px;
+        letter-spacing: 0.5px;
+    }
+
+    #line {
+        font-size: 19px;
+        margin-bottom: 16px;
+    }
+
+    #input-email,
+    #continue {
+        width: 100%;
+    }
+
+    #input-email > input {
+        width: 100%;
+        height: 64px;
+        margin-left: 0;
+        padding-left: 18px;
+        box-sizing: border-box;
+    }
+
+    #input-email > input::placeholder {
+        font-size: 17px;
+    }
+
+    #con {
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+        font-size: 17px;
+    }
+
+    #box-2 {
+        margin-top: 0;
+        padding: 35px 10%;
+        box-sizing: border-box;
+    }
+
+    #oper-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 32px;
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 1.8;
+        font-size: 16px;
+    }
+
+    #box-3,
+    #box-4 {
+        padding-left: 10%;
+        padding-right: 10%;
+        box-sizing: border-box;
+    }
+
+    #border {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #lower-text {
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 2;
+        font-size: 14px;
+    }
+}
+
+
+/* ===================================== */
+/* Screens wider than 2560px            */
+/* ===================================== */
+
+@media screen and (min-width: 2561px) {
+
+    #main {
+        width: 100%;
+        height: auto;
+        min-height: 65vh;
+        padding: 60px 100px;
+        box-sizing: border-box;
+    }
+
+    #box-1 {
+        width: 100%;
+        max-width: 630px;
+        height: auto;
+    }
+
+    #input-email,
+    #continue {
+        width: 100%;
+    }
+
+    #input-email > input {
+        width: 100%;
+        height: 64px;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+
+    #con {
+        width: 100%;
+        height: 50px;
+        margin-left: 0;
+    }
+
+    #box-2 {
+        margin-top: 0;
+        padding: 35px 10%;
+        box-sizing: border-box;
+    }
+
+    #oper-text {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px 32px;
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 1.8;
+    }
+
+    #box-3,
+    #box-4 {
+        padding-left: 10%;
+        padding-right: 10%;
+        box-sizing: border-box;
+    }
+
+    #border {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #lower-text {
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 2;
+    }
+}
+@media screen and (max-width: 1024px) {
+
+    #main {
+        width: 100%;
+        height: auto;
+        min-height: 65vh;
+        padding: 30px 24px;
+        box-sizing: border-box;
+    }
+
+    #box-1 {
+        width: 100%;
+        max-width: 630px;
+        height: auto;
+    }
+
+    #input-email,
+    #continue {
+        width: 100%;
+    }
+
+    #input-email > input {
+        width: 100%;
+        box-sizing: border-box;
+        margin-left: 0;
+    }
+
+    #con {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #box-2 {
+        margin-top: 0;
+        padding: 20px 30px 0;
+    }
+
+    #oper-text {
+        margin-left: 0;
+        word-spacing: normal;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px 22px;
+        line-height: 1.6;
+    }
+
+    #box-4 {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+
+    #border {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #lower-text {
+        margin-left: 0;
+        word-spacing: normal;
+        line-height: 1.8;
+    }
+
+    #box-3 {
+        padding: 0 30px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* ============================= */
+/* Mobile phones                 */
+/* 600px and below               */
+/* ============================= */
+
+@media screen and (max-width: 600px) {
+
+    #main {
+        min-height: auto;
+        padding: 20px 16px;
+        justify-content: center;
+    }
+
+    #box-1 {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    #icon {
+        width: 30px;
+        height: 30px;
+        margin: 0 0 24px -5px;
+    }
+
+    #icon svg {
+        width: 100%;
+        height: 100%;
+    }
+
+    #heading {
+        padding-left: 0;
+        margin-bottom: 6px;
+        font-size: clamp(21px, 5.5vw, 27px);
+        letter-spacing: 0;
+        word-spacing: 0;
+    }
+
+    #line {
+        padding-left: 0;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    #input-email {
+        width: 100%;
+    }
+
+    #input-email > input {
+        width: 100%;
+        height: 56px;
+        margin-left: 0;
+        padding: 0 14px;
+        margin-bottom: 12px;
+        border-radius: 15px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    #input-email > input::placeholder {
+        font-size: clamp(13px, 3.8vw, 16px);
+        font-weight: 500;
+        transform: none;
+    }
+
+    #continue {
+        width: 100%;
+    }
+
+    #con {
+        width: 100%;
+        height: 48px;
+        margin: 8px 0 0;
+        font-size: 16px;
+    }
+
+    #box-2 {
+        width: 100%;
+        margin-top: 40px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #oper-text {
+        margin: 0 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+        font-size: 13px;
+        line-height: 1.5;
+        word-spacing: normal;
+        text-align: center;
+    }
+
+    #eng {
+        font-size: 13px;
+    }
+
+    #more {
+        font-size: 13px;
+    }
+
+    #box-4 {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #border {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    #box-3 {
+        width: 100%;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    #lower-text {
+        margin: 18px 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px 12px;
+        font-size: 11px;
+        line-height: 1.6;
+        word-spacing: normal;
+    }
+}
+
+
+/* ============================= */
+/* Small mobile phones           */
+/* 360px and below               */
+/* ============================= */
+
+@media screen and (max-width: 360px) {
+
+    #main {
+        padding: 18px 14px;
+    }
+
+    #icon {
+        margin-bottom: 20px;
+    }
+
+    #heading {
+        font-size: 22px;
+    }
+
+    #line {
+        font-size: 15px;
+    }
+
+    #input-email > input {
+        height: 52px;
+        padding: 0 11px;
+    }
+
+    #input-email > input::placeholder {
+        font-size: 13px;
+    }
+
+    #con {
+        height: 44px;
+        font-size: 15px;
+    }
+
+    #box-2 {
+        margin-top: 30px;
+        padding: 0 14px;
+    }
+
+    #oper-text {
+        gap: 10px 14px;
+        font-size: 12px;
+    }
+
+    #box-4,
+    #box-3 {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    #lower-text {
+        gap: 7px 10px;
+        font-size: 10px;
+    }
+}
+
+
+/* ============================= */
+/* Extra small screens           */
+/* 320px and below               */
+/* ============================= */
+
+@media screen and (max-width: 320px) {
+
+    #main {
+        padding: 16px 12px;
+    }
+
+    #heading {
+        font-size: 20px;
+    }
+
+    #line {
+        font-size: 14px;
+    }
+
+    #input-email > input::placeholder {
+        font-size: 12px;
+    }
+
+    #oper-text {
+        gap: 9px 12px;
+    }
+
+    #box-2 {
+        padding: 0 12px;
+    }
+
+    #box-4,
+    #box-3 {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}

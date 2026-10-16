@@ -1,0 +1,56 @@
+
+ @media (max-width: 767px) {
+  #footer {
+    display: none !important;
+  }
+  #main-box {
+display: flex;
+    justify-content: center !important;
+    align-items: center;
+    padding: 20px;
+  }
+  #box-1 {
+    width: 90% !important;
+    max-width: 620px;
+  }
+  #input-1, #box, #con, #already-acc a button {
+    width: 100% !important;
+  }
+  #continue {
+    width: 100%;
+  }
+}
+
+/* 768px to 2560px - Center everything */
+@media (min-width: 768px) and (max-width: 2560px) {
+  #main-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #box-1 {
+    margin: 0 auto;
+    width: 620px;
+  }
+  #footer {
+    display: block;
+    text-align: center;
+  }
+  #box-2, #box-3 {
+    text-align: center;
+    margin-left: 0 !important;
+  }
+  #border {
+    margin: 0 auto;
+    width: 80%;
+  }
+  #oper-text {
+    margin-left: 0 !important;
+    word-spacing: 15px !important;
+  }
+  #lower-text {
+    margin-left: 0 !important;
+    word-spacing: 5px !important;
+  }
+}
